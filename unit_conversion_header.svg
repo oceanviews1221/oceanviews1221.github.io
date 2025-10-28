@@ -1,0 +1,83 @@
+<svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="200" fill="#1a1a2e"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#94a3b8;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Grid/measurement lines -->
+  <g opacity="0.15">
+    <line x1="100" y1="60" x2="350" y2="60" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="100" y1="80" x2="350" y2="80" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="100" y1="100" x2="350" y2="100" stroke="#0ea5e9" stroke-width="1.5"/>
+    <line x1="100" y1="120" x2="350" y2="120" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="100" y1="140" x2="350" y2="140" stroke="#0ea5e9" stroke-width="1"/>
+    
+    <!-- Tick marks -->
+    <line x1="100" y1="55" x2="100" y2="145" stroke="#0ea5e9" stroke-width="2"/>
+    <line x1="150" y1="95" x2="150" y2="105" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="200" y1="95" x2="200" y2="105" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="250" y1="95" x2="250" y2="105" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="300" y1="95" x2="300" y2="105" stroke="#0ea5e9" stroke-width="1"/>
+    <line x1="350" y1="55" x2="350" y2="145" stroke="#0ea5e9" stroke-width="2"/>
+  </g>
+  
+  <!-- Ruler icon -->
+  <g transform="translate(180, 70)">
+    <rect x="0" y="0" width="120" height="30" rx="2" fill="none" stroke="url(#metalGradient)" stroke-width="2" opacity="0.5"/>
+    <line x1="10" y1="0" x2="10" y2="10" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+    <line x1="30" y1="0" x2="30" y2="15" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+    <line x1="50" y1="0" x2="50" y2="10" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+    <line x1="70" y1="0" x2="70" y2="15" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+    <line x1="90" y1="0" x2="90" y2="10" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+    <line x1="110" y1="0" x2="110" y2="15" stroke="#64748b" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Conversion arrows -->
+  <g transform="translate(850, 80)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="#0ea5e9" text-anchor="middle" opacity="0.6">m</text>
+    
+    <path d="M 20 0 L 60 0" stroke="#06b6d4" stroke-width="2" opacity="0.5" marker-end="url(#arrow)"/>
+    <path d="M 60 10 L 20 10" stroke="#06b6d4" stroke-width="2" opacity="0.5" marker-end="url(#arrow)"/>
+    
+    <circle cx="80" cy="0" r="15" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.4"/>
+    <text x="80" y="5" font-family="monospace" font-size="14" fill="#06b6d4" text-anchor="middle" opacity="0.6">ft</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 6 3, 0 6" fill="#06b6d4" opacity="0.6"/>
+      </marker>
+    </defs>
+  </g>
+  
+  <!-- Mathematical symbols -->
+  <g opacity="0.1">
+    <text x="950" y="140" font-family="monospace" font-size="30" fill="#0ea5e9">×</text>
+    <text x="1000" y="140" font-family="monospace" font-size="30" fill="#0ea5e9">÷</text>
+    <text x="1050" y="140" font-family="monospace" font-size="30" fill="#0ea5e9">=</text>
+  </g>
+  
+  <!-- Data structure visualization (table) -->
+  <g transform="translate(120, 120)" opacity="0.15">
+    <rect x="0" y="0" width="40" height="20" fill="none" stroke="#0ea5e9" stroke-width="1"/>
+    <rect x="40" y="0" width="40" height="20" fill="none" stroke="#0ea5e9" stroke-width="1"/>
+    <rect x="80" y="0" width="40" height="20" fill="none" stroke="#0ea5e9" stroke-width="1"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="110" font-family="'Segoe UI', sans-serif" font-size="42" font-weight="300" fill="#ffffff" text-anchor="middle">Unit Conversion Tool</text>
+  
+  <!-- Accent line -->
+  <rect x="400" y="130" width="400" height="2" fill="url(#accentGlow)"/>
+</svg>

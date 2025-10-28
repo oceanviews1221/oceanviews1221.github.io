@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="200" fill="#1a1a2e"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="natureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.1" />
+    </linearGradient>
+    <radialGradient id="glowGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Abstract bear silhouette -->
+  <g transform="translate(180, 80)" opacity="0.3">
+    <!-- Head -->
+    <circle cx="30" cy="20" r="18" fill="#22c55e" opacity="0.3"/>
+    <!-- Ears -->
+    <circle cx="15" cy="8" r="8" fill="#22c55e" opacity="0.3"/>
+    <circle cx="45" cy="8" r="8" fill="#22c55e" opacity="0.3"/>
+    <!-- Body -->
+    <ellipse cx="30" cy="50" rx="20" ry="25" fill="#22c55e" opacity="0.3"/>
+  </g>
+  
+  <!-- Circuit/automation lines connecting to bear -->
+  <g opacity="0.4">
+    <path d="M 230 80 L 280 80 L 300 60" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <path d="M 300 60 L 320 60 L 340 80" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <circle cx="300" cy="60" r="4" fill="#f59e0b"/>
+    <circle cx="340" cy="80" r="4" fill="#f59e0b"/>
+    
+    <path d="M 230 100 L 280 100 L 300 120" stroke="#22c55e" stroke-width="2" fill="none"/>
+    <path d="M 300 120 L 320 120 L 340 100" stroke="#22c55e" stroke-width="2" fill="none"/>
+    <circle cx="300" cy="120" r="4" fill="#22c55e"/>
+    <circle cx="340" cy="100" r="4" fill="#22c55e"/>
+  </g>
+  
+  <!-- System components -->
+  <g transform="translate(900, 70)">
+    <!-- Sensor -->
+    <rect x="0" y="0" width="50" height="30" rx="3" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5"/>
+    <circle cx="25" cy="15" r="8" fill="url(#glowGreen)"/>
+    <text x="25" y="55" font-family="monospace" font-size="10" fill="#22c55e" text-anchor="middle" opacity="0.6">SENSOR</text>
+    
+    <!-- Controller -->
+    <rect x="70" y="0" width="50" height="30" rx="3" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
+    <circle cx="95" cy="15" r="5" fill="#f59e0b" opacity="0.6"/>
+    <text x="95" y="55" font-family="monospace" font-size="10" fill="#f59e0b" text-anchor="middle" opacity="0.6">CTRL</text>
+    
+    <!-- Connection lines -->
+    <line x1="50" y1="15" x2="70" y2="15" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+  </g>
+  
+  <!-- Environmental elements (trees/nature) -->
+  <g transform="translate(120, 140)" opacity="0.2">
+    <path d="M 0 0 L 5 -15 L 10 0 Z" fill="#22c55e"/>
+    <rect x="3" y="0" width="4" height="8" fill="#22c55e" opacity="0.6"/>
+    
+    <path d="M 20 0 L 25 -12 L 30 0 Z" fill="#22c55e"/>
+    <rect x="23" y="0" width="4" height="6" fill="#22c55e" opacity="0.6"/>
+    
+    <path d="M 40 0 L 45 -18 L 50 0 Z" fill="#22c55e"/>
+    <rect x="43" y="0" width="4" height="10" fill="#22c55e" opacity="0.6"/>
+  </g>
+  
+  <!-- Gear/automation icon -->
+  <g transform="translate(950, 130)" opacity="0.15">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="-2" y="-20" width="4" height="8" fill="#f59e0b"/>
+    <rect x="-2" y="12" width="4" height="8" fill="#f59e0b"/>
+    <rect x="12" y="-2" width="8" height="4" fill="#f59e0b"/>
+    <rect x="-20" y="-2" width="8" height="4" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="110" font-family="'Segoe UI', sans-serif" font-size="42" font-weight="300" fill="#ffffff" text-anchor="middle">Bear Enrichment</text>
+  
+  <!-- Accent line with nature-tech gradient -->
+  <rect x="430" y="130" width="170" height="2" fill="url(#natureGradient)"/>
+  <rect x="600" y="130" width="170" height="2" fill="url(#techGradient)"/>
+</svg>
